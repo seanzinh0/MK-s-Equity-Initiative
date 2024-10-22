@@ -1,0 +1,15 @@
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.sponsor-image.col.s6.l7 {
+    padding: 0;
+}
+
+.sponsor-image.col.s6.l7 img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
