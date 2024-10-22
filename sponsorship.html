@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="navbar.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+		<!-- registration css and footer social media icons -->
+		<link rel="stylesheet" href="css/registration.css" type="text/css"/>
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />	
 		<!--Import materialize.css-->
@@ -37,69 +39,43 @@
 			<li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
 		</ul>
 
-	
 		<main>
 
 
 			<div class="sponsor-images row brown lighten-5 valign-wrapper">
 				<div class="sponsor-images-text col s6 l5 centered">
-					<h1 class="flow-text ">BECOME A SPONSOR</h1>
+					<h1 class="flow-text ">JOIN OUR PACK</h1>
 					<p class="flow-text">Sponsorship can change a life—including your own. Learn about what being a sponsor means and how to get started.</p>
-					<a href="#card-section" class="waves-effect waves-light btn amber blue-text text-darken-4 ">Start your sponsorship journey today</a>
+					<a href="#form-section" class="waves-effect waves-light btn amber blue-text text-darken-4">Start your sponsorship journey today</a>
 				</div>
 				<div class="sponsor-image col s6 l7 ">
 					<img src="images/family.jpeg" alt="A sponsor that has become family with her sponsees">
 				</div>
 			</div>
 
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
-				</div>
-
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
-				</div>
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
-				</div>
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
-				</div>
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
-				</div>
-
-				<div class="container"> 
-					<h3>Sponsorship is the ultimate act of kindness—and anyone can do it.</h3>
-					<p>Over the last year, hundreds of thousands of everyday Americans have stepped up to provide a bridge to safety and a path to opportunities for families seeking refuge in the United States through ground-breaking government programs.</p>
-					&nbsp;
-					<p>Sponsors are guides, neighbors, friends, and cheerleaders for newly arriving families seeking to rebuild their lives in the U.S.</p>
+				&nbsp;
+				<div class="container row s12">
+					<div class="row">
+						<div class="col s12 m6">
+						<div class="card blue-grey darken-1">
+							<div class="card-content white-text">
+							<span class="card-title">Card Title</span>
+							<p>I am a very simple card. I am good at containing small bits of information.
+							I am convenient because I require little markup to use effectively.</p>
+							</div>
+							<div class="card-action">
+							<a href="#">This is a link</a>
+							<a href="#">This is a link</a>
+							</div>
+						</div>
+						</div>
+					</div>
 				</div>
 				
 
 				
 
-				<section id="card-section" class= "brown lighten-5 scrollspy" >
+				<section id="card-section" class= "brown lighten-5" >
 					<div class="container"> STORIES OF MENTEES
 						<p>Mentors in all 50 states are stepping up to sponsor our mentees. Read their stories</p>
 						<div class="row"> 
@@ -148,7 +124,7 @@
 					</div>
 			</section>
 
-			<section class="form">	
+			<section id="form-section" class="form scrollspy" >	
 				<div class="container">
 					<h2 class="left-align">BECOME A MENTOR</h2>
 				    <div class="row">
@@ -181,9 +157,16 @@
 							</div>
 
 							<div class="input-field col s12">
+								<i class="material-icons prefix">location_on</i>
+								<label for="reason">Address</label>
+								<textarea type="text"  id="reason" class="materialize-textarea" placeholder="Address"></textarea>						
+							</div>
+
+
+							<div class="input-field col s12">
 								<i class="material-icons prefix">toys</i>
-								<label for="reason">Reason</label>
-								<textarea type="text"  id="reason" class="materialize-textarea"></textarea>						
+								<label for="reason"> Reason</label>
+								<textarea type="text"  id="reason" class="materialize-textarea" placeholder="Why do you want to be a mentor"></textarea>						
 							</div>
 
 							<button class="waves-effect waves-light btn blue lighten-3" type="submit">
