@@ -42,12 +42,12 @@
       <div class="donations-form-container">
         <h3 class="center">Donation Form</h3>
         <p class="center">Fill out this donation form</p>
-        <p id="all-donations" class="center">Total raised to date: $0</p>
+        <p class="center">Total raised to date: $<span id="donation-amount">0</span></p>
         <form class="donations-form" action="#">
           <p class="center">Donation</p>
           <div class="input-field">
             <label for="donation">Amount</label>
-            <input placeholder="" id="donation" type="number" class="validate" required>
+            <input placeholder="" id="donation-input" type="number" class="validate" required>
           </div>
           <!-- Contact Information -->
           <p class="center">Contact Information</p>
@@ -140,5 +140,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="script.js"></script>
+    <script src="donations.js"></script>
   </body>
 </html>
