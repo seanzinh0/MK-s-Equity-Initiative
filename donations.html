@@ -37,20 +37,19 @@
       <li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
     </ul>
 
+     <!-- Donation Form -->
     <div class="donations-container">
       <div class="donations-form-container">
-
         <h3 class="center">Donation Form</h3>
         <p class="center">Fill out this donation form</p>
-        <p class="center">Total raised to date: $0,000,000.000</p>
-
+        <p id="all-donations" class="center">Total raised to date: $0</p>
         <form class="donations-form" action="#">
           <p class="center">Donation</p>
           <div class="input-field">
             <label for="donation">Amount</label>
             <input placeholder="" id="donation" type="number" class="validate" required>
           </div>
-
+          <!-- Contact Information -->
           <p class="center">Contact Information</p>
           <div class="input-field">
             <label for="first-name">First Name</label>
@@ -68,20 +67,32 @@
             <label for="phone-number">Phone</label>
             <input placeholder="" type="tel" id="phone-number" class="validate" required>
           </div>
-
+          <!-- Billing Address -->
           <p class="center">Billing Address</p>
           <div class="input-field">
-            <label for="country">Country</label>
             <select name="country" id="country" class="validate" required>
+              <option value="" disabled selected>Country</option>
               <option value="">United States</option>
               <option value="">United States</option>
               <option value="">United States</option>
               <option value="">United States</option>
             </select>
           </div>
-
+          <div class="input-field">
+            <label for="address">Address</label>
+            <textarea class="materialize-textarea" name="address" id="address"></textarea>
+          </div>
           <div class="button-center">
-            <button class="donate-btn btn waves-effect waves-light" type="submit">Donate</button>
+            <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger" type="submit">Donate</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod.</p>
+              </div>
+              <div class="modal-footer">
+                <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
           </form>       
         </div>
       </div>
