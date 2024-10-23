@@ -13,3 +13,8 @@
 	font-size: 20px;
 	height: 115px;
 }
+
+#mk-logo img {
+	height: 50px;
+	width: auto;
+}
