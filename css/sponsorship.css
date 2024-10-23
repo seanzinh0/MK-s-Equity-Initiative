@@ -1,6 +1,8 @@
 
-html {
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
   }
 
 .sponsor-image.col.s6.l7 {
@@ -17,6 +19,21 @@ html {
     font-size: 6vw;
 }
 
+.about-us {
+    height: 50rem;
+}
+
+
+
+.form-section {
+    padding: 4rem;
+}
+
+#FAQs .container {
+    padding-bottom: 7rem;
+}
+
+
 @media (max-width: 1000px) {
     .sponsor-images.row.brown.lighten-5.valign-wrapper {
         transform: translateY(2rem);
@@ -29,4 +46,13 @@ html {
      .sponsor-images-text a {
         transform: translateY(-0.7rem);
      }
+
+     img {
+        object-fit: cover;
+        height: 44vh;
+        width: 100%;
+          
+      }
+
+    
 }

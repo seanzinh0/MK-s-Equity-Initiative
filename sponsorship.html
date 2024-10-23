@@ -3,31 +3,19 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="navbar.css" />
-		<link rel="stylesheet" href="css/footer.css" />
-		<link rel="stylesheet" href="css/sponsorship.css">
+		
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 		<!--Import materialize.css-->
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+		<link rel="stylesheet" href="css/sponsorship.css">
+		<link rel="stylesheet" href="navbar.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		
 		<title>Sponsorship</title>
-		<style>
-			.about-us {
-				height: 50rem;
-			}
-
-			
-
-			.form-section {
-				padding: 4rem;
-			}
-
-			#FAQs .container {
-				padding-bottom: 7rem;
-			}
-		</style>
 	</head>
 	<body>
 		<nav>
@@ -81,9 +69,14 @@
 				
 
 				<section id="card-section" class= "brown lighten-5" >
-					<div class="container"> STORIES OF MENTEES
+					<div class="container"> 
+						
+
+						<h4>STORIES OF PUPS</h4>
 						<p>Mentors in all 50 states are stepping up to sponsor our mentees. Read their stories</p>
-						<div class="row"> 
+						
+						
+						<div class="row hide-on-med-and-down"> 
 							<div class="card col s4 ">
 								<div class="card-image waves-effect waves-block waves-light">
 									<img class="activator" src="images-sponsorship/family.jpeg" alt="A family">
@@ -126,6 +119,37 @@
 								</div>						
 							</div>			
 						</div>
+
+
+						<div class="hide-on-large-only valign-wrapper ">
+
+							<div class="container ">
+									<ul class="tabs">
+										<li class="tab col s3"><a href="#test-swipe-1">STORIES FROM PUPS</a></li>
+										<li class="tab col s3"><a class="active" href="#test-swipe-2">STORIES FROM PUPS</a></li>
+										<li class="tab col s3"><a href="#test-swipe-3">STORIES FROM PUPS</a></li>
+									</ul>
+									<div id="test-swipe-1" class="col s12 blue lighten-4">
+										“Our chief want in life is somebody who will make us do what we can.” — Ralph Waldo Emerson
+										“Mentoring is a brain to pick, an ear to listen, and a push in the right direction.” — John Crosby
+										“A mentor is someone who allows you to see the hope inside yourself.” — Oprah Winfrey
+										<img src="images-sponsorship/family.jpeg"></img>
+									</div>
+									<div id="test-swipe-2" class="col s12 blue lighten-4">
+										“I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.” — Maya Angelou
+										 but with gratitude to those who touched our human feelings. The curriculum is so much necessary raw material, but warmth is the vital element for the growing plant and for the soul of the child.” - Carl Jung
+										<img src="images-sponsorship/family.jpeg" alt="">
+									</div>
+									<div id="test-swipe-3" class="col s12 blue lighten-4">
+										The bond between mentor and protégé enables us to stay true to our chosen path until the very end." - Anonymous “The people closest to me determine my level of success or failure. The better they are, the better I am. And if I want to go to the highest level, I can do it only with the help of other people. We have to take each other higher.” – John C. Maxwell
+										<img src="images-sponsorship/family.jpeg" alt="">
+									</div>								
+							</div>
+									
+						</div>
+
+
+
 					</div>
 			</section>
 
@@ -142,11 +166,11 @@
 								</div>
 
 
-							<div class="input-field col s6">
-								<i class="material-icons prefix">account_circle</i>
-								<label for="last-name">Last Name</label>
-								<input type="text" placeholder="Last Name" id="last-name" class="validate">
-							</div>
+								<div class="input-field col s6">
+									<label for="first-name">Last Name</label>
+									<i class="material-icons prefix">account_circle</i>
+									<input type="text" placeholder="Last Name" id="first-name" class="validate">
+								</div>
 
 							<div class="input-field col s12">
 								<i class="material-icons prefix">phone</i>
@@ -171,7 +195,7 @@
 							<div class="input-field col s12">
 								<i class="material-icons prefix">toys</i>
 								<label for="reason"> Reason</label>
-								<textarea type="text"  id="reason" class="materialize-textarea" placeholder="Why do you want to be a mentor"></textarea>						
+								<textarea type="text"  id="reason" class="materialize-textarea" placeholder="Why mentorship?"></textarea>						
 							</div>
 
 							<button class="waves-effect waves-light btn blue lighten-3" type="submit">
