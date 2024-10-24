@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="navbar.css" />
-		<link rel="stylesheet" href="css/footer.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-		<!--Import materialize.css-->
-		<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-		<title>Donations</title>
-	</head>
-	<body>
-		<nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Donation css link -->
+     <link rel="stylesheet" href="Tylers-Folder/donations.css">
+    <title>Donations</title>
+  </head>
+  <body>
+    <nav>
 			<div class="nav-wrapper blue lighten-4">
 				<a href="index.html" class="brand-logo black-text center" id="mk-logo"><img src="logo-img/mks-equity-initiative-high-resolution-logo-grayscale-transparent.png" alt="mk logo" /></a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
@@ -27,52 +29,165 @@
 				</ul>
 			</div>
 		</nav>
-		<ul class="sidenav" id="mobile-demo">
-			<li><a href="index.html" class="black-text">Home</a></li>
-			<li><a href="stats.html" class="black-text">Statistics</a></li>
-			<li><a href="mentor.html" class="black-text">Mentors</a></li>
-			<li><a href="registration.html" class="black-text">Register</a></li>
-			<li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
-		</ul>
-		<footer class="page-footer blue lighten-4">
-			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="black-text">MK's Equity Initiative</h5>
-						<ul>
-							<li><a href="donations.html" class="black-text">Donations</a></li>
-						</ul>
-						<p class="black-text">Contact us: 704-522-1111</p>
-					</div>
-					<div class="col l4 offset-l2 s12">
-						<h5 class="black-text">Follow Us</h5>
-						<ul>
-							<li class="black-text">
-								<a class="black-text" href="https://www.instagram.com" target="_blank"> <i class="bx bxl-instagram"></i> </a>Instagram
-							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://www.facebook.com" target="_blank"> <i class="bx bxl-facebook"></i> </a>FaceBook
-							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://www.linkedin.com" target="_blank"> <i class="bx bxl-linkedin"></i> </a>LinkedIn
-							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://x.com" target="_blank"> <i class="bx bxl-twitter"></i> </a>Twitter
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="footer-copyright">
-				<div class="container black-text">
-					Copyright © 2024 MK's Equity Initiative
-					<a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
-				</div>
-			</div>
-		</footer>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="script.js"></script>
-	</body>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html" class="black-text">Home</a></li>
+      <li><a href="stats.html" class="black-text">Statistics</a></li>
+      <li><a href="mentor.html" class="black-text">Mentors</a></li>
+      <li><a href="registration.html" class="black-text">Register</a></li>
+      <li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
+    </ul>
+
+     <!-- Donation Form -->
+    <div class="donations-container">
+      <div class="donations-form-container">
+        <h3 class="center">Donation Form</h3>
+        <form class="donations-form" action="#">
+          <p class="center">Donation</p>
+          <div class="input-field">
+            <label for="donation">Amount</label>
+            <input id="donation-input" type="number" class="validate" required>
+          </div>
+          <!-- Contact Information -->
+          <p class="center">Contact Information</p>
+          <div class="input-field">
+            <label for="first-name">First Name</label>
+            <input id="first-name" type="text" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="last-name">Last Name</label>
+            <input id="last-name" type="text" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="phone-number">Phone</label>
+            <input type="tel" id="phone-number" class="validate" required>
+          </div>
+          <!-- Billing Address -->
+          <p class="center">Billing Address</p>
+          <div class="input-field">
+            <select name="country" id="country" class="validate" required>
+              <option value="" disabled selected>Country</option>
+              <option value="">United States</option>
+              <option value="">United States</option>
+              <option value="">United States</option>
+              <option value="">United States</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <label for="address">Address</label>
+            <textarea class="materialize-textarea" name="address" id="address"></textarea>
+          </div>
+          <div class="input-field">
+            <label for="city">City</label>
+            <input type="text" id="city" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="state">State</label>
+            <input type="text" id="state" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="zip-code">ZIP Code</label>
+            <input type="text" id="zip-code" class="validate" required>
+          </div>
+         <!-- Payment Information -->
+          <p class="center">Payment Information</p>
+          <p>
+            <label for="debit">
+              <input id="debit" name="payment-type" type="radio" checked>
+              <span>Debit Card</span>
+            </label>
+          </p>
+          <p>
+            <label for="credit">
+              <input id="credit" name="payment-type" type="radio">
+              <span>Credit Card</span>
+            </label>
+          </p>
+          <div class="payment-box">
+            <div class="input-field">
+              <label for="card-num">Card Number</label>
+              <input placeholder="XXXX XXXX XXXX XXXX" id="card-num" type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="validate" required>
+            </div>
+            <div class="input-field">
+              <label for="expiration">Expiration Date</label>
+              <input class="expiration validate" placeholder="MM" type="text" maxlength="2">
+              <span>/</span>
+              <input class="expiration validate" placeholder="YY" type="text" maxlength="2">
+            </div>
+            <div class="input-field">
+              <label for="security-code">Security Code</label>
+              <input type="text" id="security-code" class="validate" maxlength="4">
+            </div>
+            <!-- Comments -->
+             <p class="center">Comments</p>
+            <div class="input-field">
+              <label for="comments">Comments</label>
+              <textarea style="height: 100px;" class="materialize-textarea" name="comments" id="comments"></textarea>
+            </div>
+          </div>
+          <!-- Donate Button + Modal -->
+          <div style="margin-top: 50px;" class="button-center">
+            <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger" type="submit">Donate</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod.</p>
+              </div>
+              <div class="modal-footer">
+                <a id="disagree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
+                <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div>
+          </form>       
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="page-footer blue lighten-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="black-text">MK's Equity Initiative</h5>
+            <ul>
+              <li><a href="donations.html" class="black-text">Donations</a></li>
+            </ul>
+            <p class="black-text">Contact us: 704-522-1111</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="black-text">Follow Us</h5>
+            <ul>
+              <li class="black-text">
+                <a class="black-text" href="https://www.instagram.com" target="_blank"> <i class="bx bxl-instagram"></i> </a>Instagram
+              </li>
+              <li class="black-text">
+                <a class="black-text" href="https://www.facebook.com" target="_blank"> <i class="bx bxl-facebook"></i> </a>FaceBook
+              </li>
+              <li class="black-text">
+                <a class="black-text" href="https://www.linkedin.com" target="_blank"> <i class="bx bxl-linkedin"></i> </a>LinkedIn
+              </li>
+              <li class="black-text">
+                <a class="black-text" href="https://x.com" target="_blank"> <i class="bx bxl-twitter"></i> </a>Twitter
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container black-text">
+          Copyright © 2024 MK's Equity Initiative
+          <a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script src="Tylers-Folder/donations.js"></script>
+  </body>
 </html>
