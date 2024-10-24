@@ -4,10 +4,12 @@
     justify-content: center;
     align-items: center;
     background: white;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 
 .form-container {
-    max-width: 700px;
+    max-width: 900px;
     width: 100%;
     background: #fff;
     padding: 25px 30px;
@@ -19,9 +21,6 @@
 .regis-title {
     text-align: center;
     padding-bottom: 6px;
-}
-
-.form-container .regis-title {
     font-size: 40px;
     font-weight: 500;
     position: relative;
@@ -35,34 +34,33 @@
     padding-bottom: 40px;
 }
 
-.form-container form .user-details {
+.user-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 15px 0 10px 0;
 }
 
-form .user-details .input-box {
+.input-box {
     margin-bottom: 15px;
-    width: 45%
 }
 
-.user-details .input-box .details {
+.details {
     font-weight: 500;
     margin-bottom: 5px;
     display: block;
 }
 
-.user-details .input-box input {
+/* .user-details .input-box input {
     height: 35px;
     width: 100%;
     outline: none;
     padding-left: 5px;
     border-radius: 2px;
     border: 1px solid #9e9e9e;
-}
+} */
 
-form .comm .comm-title {
+/* form .comm .comm-title {
     font-weight: 500;
 }
 
@@ -71,7 +69,7 @@ form .comm .comm-title {
     height: 35px;
     margin-bottom: 15px;
     border: 1px solid #9e9e9e;
-}
+} */
 
 #info {
     border: 1px solid #9e9e9e;
@@ -106,3 +104,4 @@ form .comm .comm-title {
 .regis-button input:hover {
     border: 1px solid black;
 }
+
