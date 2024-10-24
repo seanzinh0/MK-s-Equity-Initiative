@@ -1,11 +1,5 @@
 $(document).ready(function () {
-	$(".sidenav").sidenav();
-});
-
-$(document).ready(function () {
-	$(".carousel").carousel();
-});
-
-$(document).ready(function () {
 	$(".collapsible").collapsible();
+	$(".carousel").carousel();
+	$(".sidenav").sidenav();
 });

@@ -19,3 +19,38 @@
 #carousel-card li {
 	list-style-type: disc;
 }
+
+#carousel-card ul {
+	padding-left: 20px;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1439px) {
+	/* TODO: remove before PR */
+	body {
+		background-color: red;
+	}
+}
+
+/* for mobile */
+@media only screen and (max-width: 699px) {
+	/* TODO:remove before PR */
+	body h2 {
+		font-size: 1.5rem;
+	}
+	body {
+		background-color: lightblue;
+	}
+}
+
+/* for tablet */
+@media only screen and (max-width: 1439px) {
+	/* TODO: remove before PR */
+	/* footer stuff */
+}
+
+/* for mobile */
+@media only screen and (max-width: 699px) {
+	/* TODO:remove before PR */
+	/* footer stuff */
+}
