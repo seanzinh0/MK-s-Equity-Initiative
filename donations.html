@@ -17,18 +17,18 @@
   </head>
   <body>
     <nav>
-      <div class="nav-wrapper blue lighten-4">
-        <a href="index.html" class="brand-logo black-text center">MK's Equity Initiative</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
-        <ul id="nav-desktop" class="left hide-on-med-and-down">
-          <li><a href="index.html" class="black-text">Home</a></li>
-          <li><a href="stats.html" class="black-text">Statistics</a></li>
-          <li><a href="mentor.html" class="black-text">Mentors</a></li>
-          <li><a href="registration.html" class="black-text">Register</a></li>
-          <li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
-        </ul>
-      </div>
-    </nav>
+			<div class="nav-wrapper blue lighten-4">
+				<a href="index.html" class="brand-logo black-text center" id="mk-logo"><img src="logo-img/mks-equity-initiative-high-resolution-logo-grayscale-transparent.png" alt="mk logo" /></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+				<ul id="nav-desktop" class="left hide-on-med-and-down">
+					<li><a href="index.html" class="black-text">Home</a></li>
+					<li><a href="stats.html" class="black-text">Statistics</a></li>
+					<li><a href="mentor.html" class="black-text">Mentors</a></li>
+					<li><a href="registration.html" class="black-text">Register</a></li>
+					<li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
+				</ul>
+			</div>
+		</nav>
     <ul class="sidenav" id="mobile-demo">
       <li><a href="index.html" class="black-text">Home</a></li>
       <li><a href="stats.html" class="black-text">Statistics</a></li>
@@ -41,31 +41,29 @@
     <div class="donations-container">
       <div class="donations-form-container">
         <h3 class="center">Donation Form</h3>
-        <p class="center">Fill out this donation form</p>
-        <p class="center">Total raised to date: $<span id="donation-amount">0</span></p>
         <form class="donations-form" action="#">
           <p class="center">Donation</p>
           <div class="input-field">
             <label for="donation">Amount</label>
-            <input placeholder="" id="donation-input" type="number" class="validate" required>
+            <input id="donation-input" type="number" class="validate" required>
           </div>
           <!-- Contact Information -->
           <p class="center">Contact Information</p>
           <div class="input-field">
             <label for="first-name">First Name</label>
-            <input placeholder="" id="first-name" type="text" class="validate" required>
+            <input id="first-name" type="text" class="validate" required>
           </div>
           <div class="input-field">
             <label for="last-name">Last Name</label>
-            <input placeholder="" id="last-name" type="text" class="validate" required>
+            <input id="last-name" type="text" class="validate" required>
           </div>
           <div class="input-field">
             <label for="email">Email</label>
-            <input placeholder="" id="email" type="email" class="validate" required>
+            <input id="email" type="email" class="validate" required>
           </div>
           <div class="input-field">
             <label for="phone-number">Phone</label>
-            <input placeholder="" type="tel" id="phone-number" class="validate" required>
+            <input type="tel" id="phone-number" class="validate" required>
           </div>
           <!-- Billing Address -->
           <p class="center">Billing Address</p>
@@ -82,7 +80,56 @@
             <label for="address">Address</label>
             <textarea class="materialize-textarea" name="address" id="address"></textarea>
           </div>
-          <div class="button-center">
+          <div class="input-field">
+            <label for="city">City</label>
+            <input type="text" id="city" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="state">State</label>
+            <input type="text" id="state" class="validate" required>
+          </div>
+          <div class="input-field">
+            <label for="zip-code">ZIP Code</label>
+            <input type="text" id="zip-code" class="validate" required>
+          </div>
+         <!-- Payment Information -->
+          <p class="center">Payment Information</p>
+          <p>
+            <label for="debit">
+              <input id="debit" name="payment-type" type="radio" checked>
+              <span>Debit Card</span>
+            </label>
+          </p>
+          <p>
+            <label for="credit">
+              <input id="credit" name="payment-type" type="radio">
+              <span>Credit Card</span>
+            </label>
+          </p>
+          <div class="payment-box">
+            <div class="input-field">
+              <label for="card-num">Card Number</label>
+              <input placeholder="XXXX XXXX XXXX XXXX" id="card-num" type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="validate" required>
+            </div>
+            <div class="input-field">
+              <label for="expiration">Expiration Date</label>
+              <input class="expiration validate" placeholder="MM" type="text" maxlength="2">
+              <span>/</span>
+              <input class="expiration validate" placeholder="YY" type="text" maxlength="2">
+            </div>
+            <div class="input-field">
+              <label for="security-code">Security Code</label>
+              <input type="text" id="security-code" class="validate" maxlength="4">
+            </div>
+            <!-- Comments -->
+             <p class="center">Comments</p>
+            <div class="input-field">
+              <label for="comments">Comments</label>
+              <textarea style="height: 100px;" class="materialize-textarea" name="comments" id="comments"></textarea>
+            </div>
+          </div>
+          <!-- Donate Button + Modal -->
+          <div style="margin-top: 50px;" class="button-center">
             <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger" type="submit">Donate</button>
             <div id="modal" class="modal">
               <div class="modal-content">
@@ -90,6 +137,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod.</p>
               </div>
               <div class="modal-footer">
+                <a id="disagree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
                 <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Agree</a>
               </div>
             </div>
