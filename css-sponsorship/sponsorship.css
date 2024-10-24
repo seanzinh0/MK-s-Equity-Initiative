@@ -1,0 +1,58 @@
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
+  }
+
+.sponsor-image.col.s6.l7 {
+    padding: 0;
+}
+
+.sponsor-image.col.s6.l7 img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.sponsor-images-text h1 {
+    font-weight: 500;
+    font-size: 6vw;
+}
+
+.about-us {
+    height: 50rem;
+}
+
+
+
+.form-section {
+    padding: 4rem;
+}
+
+#FAQs .container {
+    padding-bottom: 7rem;
+}
+
+
+@media (max-width: 1000px) {
+    .sponsor-images.row.brown.lighten-5.valign-wrapper {
+        transform: translateY(2rem);
+     }
+
+     .sponsor-image img {
+        transform: translateY(1rem);
+     }
+
+     .sponsor-images-text a {
+        transform: translateY(-0.7rem);
+     }
+
+     img {
+        object-fit: cover;
+        height: 44vh;
+        width: 100%;
+          
+      }
+
+    
+}
