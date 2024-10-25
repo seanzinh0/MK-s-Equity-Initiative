@@ -14,7 +14,7 @@
   border: 2px solid black;
   box-shadow: 10px 25px 28px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  margin: 150px 0px 100px 0px;
+  margin: 50px;
 }
 
 .donations-form-container h3 {
@@ -42,10 +42,30 @@
   background-color: #90bdd1;
 }
 
-
 .payment-box {
   max-width: 650px;
   border: 2px solid black;
   margin: auto;
   padding: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+.card {
+  max-width: 700px;
+}
+
+.card-title {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
