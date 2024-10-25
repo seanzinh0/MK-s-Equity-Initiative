@@ -25,7 +25,7 @@
 }
 
 /* for tablet */
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1200px) {
 	/* TODO: remove before PR */
 	#carousel-style {
 		height: 500px;
