@@ -1,5 +1,6 @@
 #carousel-style {
 	height: 600px;
+	width: 100%;
 }
 
 #carousel-card {
@@ -14,4 +15,60 @@
 #carousel-card img {
 	height: 400px;
 	width: auto;
+}
+
+#carousel-card li {
+	list-style-type: disc;
+}
+
+#carousel-card ul {
+	padding-left: 20px;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1200px) {
+	/* TODO: remove before PR */
+	#carousel-style {
+		height: 500px;
+		margin-bottom: 20px;
+	}
+
+	#carousel-card {
+		height: 375px;
+		width: 375px;
+	}
+
+	#carousel-card img {
+		height: 225px;
+	}
+
+	#carousel-card li {
+		font-size: 0.8rem;
+	}
+}
+
+/* for mobile */
+@media only screen and (max-width: 699px) {
+	/* TODO:remove before PR */
+	body h2 {
+		font-size: 1.5rem;
+	}
+
+	#carousel-style {
+		height: 400px;
+		margin-bottom: 20px;
+	}
+
+	#carousel-card {
+		height: 350px;
+		width: 300px;
+	}
+
+	#carousel-card img {
+		height: 200px;
+	}
+
+	#carousel-card li {
+		font-size: 0.7rem;
+	}
 }

@@ -37,18 +37,33 @@
       <li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
     </ul>
 
+    <!-- Donation Card -->
+    <div class="card-container">
+     <div class="card">
+       <div class="center card-content">
+         <span class="center card-title">Make A Difference Today</span>
+         <p>Thank you for considering a donation to MK's Equity Initiative. Your generous support helps us continue our vital work in 
+          helping youth in poverty. Every contribution, no matter the size, plays a crucial role in transforming lives and making a positive 
+          impact in our community. Together, we can create lasting change. Join us in our mission and help us reach our goals!
+        </p>
+       </div>
+     </div>
+    </div>
+
+
+
      <!-- Donation Form -->
     <div class="donations-container">
       <div class="donations-form-container">
         <h3 class="center">Donation Form</h3>
         <form class="donations-form" action="#">
-          <p class="center">Donation</p>
+          <p class="underline center">Donation</p>
           <div class="input-field">
             <label for="donation">Amount</label>
             <input id="donation-input" type="number" class="validate" required>
           </div>
           <!-- Contact Information -->
-          <p class="center">Contact Information</p>
+          <p class="underline center">Contact Information</p>
           <div class="input-field">
             <label for="first-name">First Name</label>
             <input id="first-name" type="text" class="validate" required>
@@ -66,7 +81,7 @@
             <input type="tel" id="phone-number" class="validate" required>
           </div>
           <!-- Billing Address -->
-          <p class="center">Billing Address</p>
+          <p class="underline center">Billing Address</p>
           <div class="input-field">
             <select name="country" id="country" class="validate" required>
               <option value="" disabled selected>Country</option>
@@ -93,7 +108,7 @@
             <input type="text" id="zip-code" class="validate" required>
           </div>
          <!-- Payment Information -->
-          <p class="center">Payment Information</p>
+          <p class="underline center">Payment Information</p>
           <p>
             <label for="debit">
               <input id="debit" name="payment-type" type="radio" checked>
@@ -113,16 +128,14 @@
             </div>
             <div class="input-field">
               <label for="expiration">Expiration Date</label>
-              <input class="expiration validate" placeholder="MM" type="text" maxlength="2">
-              <span>/</span>
-              <input class="expiration validate" placeholder="YY" type="text" maxlength="2">
+              <input class="expiration validate" placeholder="MM / YY" type="date" required>
             </div>
             <div class="input-field">
               <label for="security-code">Security Code</label>
-              <input type="text" id="security-code" class="validate" maxlength="4">
+              <input type="text" id="security-code" class="validate" maxlength="4" required>
             </div>
             <!-- Comments -->
-             <p class="center">Comments</p>
+             <p class="underline center">Comments</p>
             <div class="input-field">
               <label for="comments">Comments</label>
               <textarea style="height: 100px;" class="materialize-textarea" name="comments" id="comments"></textarea>
@@ -133,20 +146,21 @@
             <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger" type="submit">Donate</button>
             <div id="modal" class="modal">
               <div class="modal-content">
-                <h4>Lorem ipsum dolor sit amet.</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quod.</p>
+                <h4>Donation Confirmation</h4>
+                <p>By clicking "Confirm," you agree to contribute the specified amount to MK's Equity Initiative. 
+                  Your donation will be used to support our mission of helping youth in poverty. All contributions are non-refundable. 
+                  Thank you for your generosity!
+                </p>
               </div>
               <div class="modal-footer">
-                <a id="disagree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Disagree</a>
-                <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                <a id="disagree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Deny</a>
+                <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Confirm</a>
               </div>
             </div>
           </form>       
         </div>
       </div>
     </div>
-
-
 
     <footer class="page-footer blue lighten-4">
       <div class="container">
