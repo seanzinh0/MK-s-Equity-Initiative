@@ -1,5 +1,6 @@
 #carousel-style {
 	height: 600px;
+	width: 100%;
 }
 
 #carousel-card {
@@ -25,10 +26,24 @@
 }
 
 /* for tablet */
-@media only screen and (max-width: 1439px) {
+@media only screen and (max-width: 1200px) {
 	/* TODO: remove before PR */
-	body {
-		background-color: red;
+	#carousel-style {
+		height: 500px;
+		margin-bottom: 20px;
+	}
+
+	#carousel-card {
+		height: 375px;
+		width: 375px;
+	}
+
+	#carousel-card img {
+		height: 225px;
+	}
+
+	#carousel-card li {
+		font-size: 0.8rem;
 	}
 }
 
@@ -38,19 +53,22 @@
 	body h2 {
 		font-size: 1.5rem;
 	}
-	body {
-		background-color: lightblue;
+
+	#carousel-style {
+		height: 400px;
+		margin-bottom: 20px;
 	}
-}
 
-/* for tablet */
-@media only screen and (max-width: 1439px) {
-	/* TODO: remove before PR */
-	/* footer stuff */
-}
+	#carousel-card {
+		height: 350px;
+		width: 300px;
+	}
 
-/* for mobile */
-@media only screen and (max-width: 699px) {
-	/* TODO:remove before PR */
-	/* footer stuff */
+	#carousel-card img {
+		height: 200px;
+	}
+
+	#carousel-card li {
+		font-size: 0.7rem;
+	}
 }
