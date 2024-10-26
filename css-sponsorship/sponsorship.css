@@ -23,6 +23,9 @@ html, body {
     height: 50rem;
 }
 
+#FAQs {
+    padding-bottom: 2.5rem;
+}
 
 
 .form-section {
@@ -33,26 +36,199 @@ html, body {
     padding-bottom: 7rem;
 }
 
+.form-span {
+    margin-left: 3rem;
+    color:#e53935;
+}
 
-@media (max-width: 1000px) {
+.tabs li a {
+    color: black !important;
+    background-color: whitesmoke !important ;
+    opacity: 0.1;
+}
+
+.tabs li a:active, .tabs li a:hover  {
+    color: black !important;
+    opacity: 1;
+}
+
+.tabs .indicator {
+    background-color: black ;
+}
+
+#card-section .row {
+    display: flex;
+    gap: 2rem;
+}
+
+#card-section .row div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* mobile */ 
+@media (width >= 374px) {
+
     .sponsor-images.row.brown.lighten-5.valign-wrapper {
         transform: translateY(2rem);
      }
+    
 
      .sponsor-image img {
-        transform: translateY(1rem);
+          width: 100%;
+     }
+     
+     .sponsor-image {
+          height: calc(100vh - 300px);
+          overflow: hidden;
+
+     }
+
+     #card-section div {
+        max-height: 500px;
+        max-width: 600px;
+        overflow: hidden;
+     }
+
+  
+
+     .sponsor-images-text a {
+        transform: translateY(-0.7rem);
+     }
+
+
+     #last-name-form-span span {
+        margin-left: 3rem;
+     }
+
+     #first-name-form-span span {
+        margin-left: 3rem;
+     }
+
+     .tabs-content div img {
+        visibility: hidden;
+     }
+
+
+
+}
+
+
+
+/* tablet */
+@media (width >= 767px) {
+
+
+    .sponsor-images.row.brown.lighten-5.valign-wrapper {
+        transform: translateY(2rem);
+        max-height: fit-content;
      }
 
      .sponsor-images-text a {
         transform: translateY(-0.7rem);
      }
 
-     img {
-        object-fit: cover;
-        height: 44vh;
-        width: 100%;
-          
-      }
+     #FAQs {
+        padding-bottom: 10rem;
+        padding-top: 7rem;
+    }
 
+    #last-name-form-span span {
+        margin-left: 0;
+    }
+  
+       #first-name-form-span span {
+        margin-left: 0;
+       }
+
+       #card-section div {
+        max-height: 500px;
+        max-width: 600px;
+        overflow: hidden;
+     }
+
+     #card-section h4, #card-section p {
+        margin-left: 3rem;
+     }
+
+}
+
+
+/* desktop */
+@media (width >= 1000px) {
+    .sponsor-images.row.brown.lighten-5.valign-wrapper {
+        transform: translateY(1rem);
+        max-height: 150vh;
+        height: 40rem;
+
+        
+     }
+
+    .sponsor-image {
+        max-height: 150vh !important;
+        height: 40rem !important;
+
+    }
+
+    .card.col.s4 img {
+       height: 650px;
+       width: 100%;
+    }
+
+     /* .sponsor-image {
+        background-image: url('images-sponsorship/family2.jpg');
+     } */
+
+     .sponsor-images-text a {
+        transform: translateY(-0.7rem);
+     }
+
+     .sponsor-image {
+        height: calc(100vh - 500px);
+        overflow: hidden;
+
+   }
+
+   #card-section div {
+    max-height: inherit;
+    max-width: inherit;
+    overflow: hidden;
+ }
+  
+
+   #card-section h4, #card-section p {
+    margin-left: 0;
+ }
+    
+
+   #last-name-form-span span {
+    margin-left: 0;
+}
+
+   #first-name-form-span span {
+    margin-left: 0;
+   }
+
+     
     
 }
+
+
+
+
+
+
