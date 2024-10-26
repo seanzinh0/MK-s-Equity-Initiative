@@ -1,10 +1,14 @@
+main {
+    padding-top: 100px;
+}
+
 .regis-form {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: white;
-    margin-top: 200px;
+    background: rgb(255, 255, 255);
+    margin-top: 150px;
     margin-bottom: 200px;
 }
 
@@ -20,7 +24,7 @@
 
 .regis-title {
     text-align: center;
-    padding-bottom: 6px;
+    padding-bottom: 10px;
     font-size: 40px;
     font-weight: 500;
     position: relative;
@@ -51,25 +55,6 @@
     display: block;
 }
 
-/* .user-details .input-box input {
-    height: 35px;
-    width: 100%;
-    outline: none;
-    padding-left: 5px;
-    border-radius: 2px;
-    border: 1px solid #9e9e9e;
-} */
-
-/* form .comm .comm-title {
-    font-weight: 500;
-}
-
-#prefer {
-    width: 285px;
-    height: 35px;
-    margin-bottom: 15px;
-    border: 1px solid #9e9e9e;
-} */
 
 #info {
     border: 1px solid #9e9e9e;
@@ -104,4 +89,3 @@
 .regis-button input:hover {
     border: 1px solid black;
 }
-
