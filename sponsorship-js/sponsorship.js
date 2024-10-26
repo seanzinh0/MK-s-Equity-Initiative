@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let isFormValid = false;
 
+     
 
         const form = document.getElementById('sponsor-form');
-        const submitBtn = document.getElementById('submit-btn');
 
         const errorMessage = document.getElementsByClassName('form-span');
         const arrOfMessages = [...errorMessage];
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
              if(isFormValid) {
-                    modalInstance.open();
+                    modalInstance.open(); 
             } 
            
           
