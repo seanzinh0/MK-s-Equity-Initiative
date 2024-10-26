@@ -76,10 +76,6 @@ html, body {
 
 
 
-
-
-
-
    /* mobile */ 
 @media (width >= 374px) {
 
@@ -104,6 +100,9 @@ html, body {
         overflow: hidden;
      }
 
+     #test-swipe-1, #test-swipe-2, #test-swipe-3 {
+        overflow-y: auto !important;
+     }
   
 
      .sponsor-images-text a {
@@ -163,6 +162,15 @@ html, body {
 
      #card-section h4, #card-section p {
         margin-left: 3rem;
+     }
+
+     
+     #last-name-form-span span {
+        margin-left: 0;
+     }
+
+     #first-name-form-span span {
+        margin-left: 0;
      }
 
 }
