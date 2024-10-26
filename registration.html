@@ -39,6 +39,20 @@
 	
 	<main>
 
+		<div style="display: flex; justify-content: center;"class="card-info">
+			<div class="col s12 m6">
+			  <div class="card amber lighten-5">
+				<div class="card-content black-text">
+				  <p style="text-align: center; font-size: 18px;">Below is the registration form for our program. If you believe you would benefit from
+					this opportunity, please have a parent or guardian<br> complete this form, and we will get 
+					back to you shortly. We look foward to connecting with you!
+
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
 		<div class="regis-form"> 	
 			<div class="form-container"> 
 				<div class="regis-title">Registration Form</div> 
@@ -46,7 +60,7 @@
 					<div class="user-details"> 
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">First Name</span>					
-							<input type="text" placeholder="Enter your first name" required> 
+							<input id="first-name" type="text" placeholder="Enter your first name" required> 
 						</div> 
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">Middle Name</span>
@@ -54,50 +68,63 @@
 						</div> 
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">Last Name</span> 
-							<input type="text" placeholder="Enter your last name" required> 
+							<input id="last-name" type="text" placeholder="Enter your last name" required> 
 						</div> 
 						<div style="width: 48%;" class="input-box"> 
 							<span class="details">Email</span> 
-							<input type="text" placeholder="Enter your email" required> 
+							<input id="email" type="text" placeholder="Enter your email" required> 
 						</div> 
 						<div style="width: 48%;" class="input-box"> 
 							<span class="details">Phone Number</span> 
-							<input type="text" placeholder="Enter your phone number" required> 
+							<input id="phone" type="text" placeholder="Enter your phone number" required> 
 						</div>
 						<div style="width: 100%;" class="input-box"> 
 							<span class="details">Address</span> 
-							<input type="text" placeholder="Enter your address" required> 
+							<input id="address" type="text" placeholder="Enter your address" required> 
 						</div>
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">City</span> 
-							<input type="text" placeholder="Enter your city" required> 
+							<input id="city" type="text" placeholder="Enter your city" required> 
 						</div>
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">State</span> 
-							<input type="text" placeholder="Enter your state" required> 
+							<input id="state" type="text" placeholder="Enter your state" required> 
 						</div>
 						<div style="width: 30%;" class="input-box"> 
 							<span class="details">Zip Code</span> 
-							<input type="text" placeholder="Enter your zip code" required> 
+							<input id="zipCode" type="text" placeholder="Enter your zip code" required> 
 						</div>
-					<div style="display: flex;">
-						<p style="font-weight: 500;">Select your Gender</p>
-					<p style="padding-left: 30px;">
-						<label>
-						  <input name="group1" type="radio" checked />
-						  <span>Male</span>
-						</label>
-					  </p>
-					  <p style="padding-left: 30px;">
-						<label>
-						  <input name="group1" type="radio" />
-						  <span>Female</span>
-						</label>
+						<div style="display: flex; padding-top: 30px;">
+							<p style="font-weight: 500;">Select your Gender</p>
+							<p style="padding-left: 15px;">
+							<label>
+						  		<input name="group1" type="radio" checked />
+						  		<span style="padding-left: 22px;">Male</span>
+							</label>
+					  		</p>
+					  		<p style="padding-left: 15px;">
+							<label>
+						  		<input name="group1" type="radio" />
+						  		<span style="padding-left: 22px;">Female</span>
+							</label>
+							</p>
+							<p style="padding-left: 15px;">
+							<label>
+							  <input name="group1" type="radio" />
+							  <span style="padding-left: 22px;">Prefer not to say</span>
+							</label>
+							</p>
+						</div>
+					<div style="width: 30%;" class="input-box"> 
+					<p> 
+						<span class="details" for="datemin" style="font-weight: 500;">Date of Birth</span>
+						  <input type="date" id="datemin" name="datemin" mix="2006-10-31">
 					</p>
 					</div>
+
 				</div>
 
-				<h3 style="font-size: 20px;"class="fill-out">For parents or guardian below!</h3> 
+				<h3 style="font-size: 20px;"class="fill-out">For parent or guardian below!</h3> 
 
 				<div class="user-details"> 
 					<div style="width: 48%;" class="input-box"> 
@@ -105,7 +132,7 @@
 						<input type="text" placeholder="Enter your first name" required> 
 					</div> 
 					<div style="width: 48%;" class="input-box"> 
-						<span class="details">Last Name</span> 
+						<span class="details">Last Name</span>
 						<input type="text" placeholder="Enter your last name" required> 
 					</div> 
 					<div style="width: 48%;" class="input-box"> 
@@ -120,7 +147,7 @@
 
 
 				<div class="regis-button"> 
-					<input type="submit" value="Submit"> 
+					<input onClick="valForm()" type="submit" value="Submit"> 
 				</div> 
 				</form>
 			</div>
@@ -134,39 +161,38 @@
 						<div class="col l6 s12">
 							<h5 class="black-text">MK's Equity Initiative</h5>
 							<ul>
-								<li><a href="donations.html" class="black-text">Donations</a></li>
+								<li><a href="donations.html"class=" black waves-effect waves-light btn"><i class='bx bx-credit-card right' ></i>DONATE</a>
+								</a></li>
 							</ul>
-							<p class="black-text">Contact us: 704-522-1111</p>
+							<p class="black-text">Call Us: <i class='bx bxs-phone'></i> 704-522-1111</p>
+							<p class="black-text">Email Us: <i class='bx bxs-envelope' ></i> info@mkequityinitiative.org</p>
 						</div>
 						<div class="col l4 offset-l2 s12">
 							<h5 class="black-text">Follow Us</h5>
 							<ul>
-								<li class="black-text">
-									<a class="black-text" href="https://www.instagram.com" target="_blank">
-										<i class="bx bxl-instagram"></i> </a
-									>Instagram
+								<li class="black-text-socials">
+									<a style="display: flex; align-items: center;" class="black-text" style href="https://www.instagram.com" target="_blank">
+										<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-instagram"></i>Instagram</a>
 								</li>
-								<li class="black-text">
-									<a class="black-text" href="https://www.facebook.com" target="_blank">
-										<i class="bx bxl-facebook"></i> </a
-									>FaceBook
+								<li class="black-text-socials">
+									<a style="display: flex; align-items: center;" class="black-text" href="https://www.facebook.com" target="_blank">
+										<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-facebook"></i>Facebook</a>
 								</li>
-								<li class="black-text">
-									<a class="black-text" href="https://www.linkedin.com" target="_blank">
-										<i class="bx bxl-linkedin"></i> </a
-									>LinkedIn
+								<li class="black-text-socials">
+									<a style="display: flex; align-items: center;" class="black-text" href="https://www.linkedin.com" target="_blank">
+										<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-linkedin"></i>LinkedIn</a>
 								</li>
-								<li class="black-text">
-									<a class="black-text" href="https://x.com" target="_blank">
-										<i class="bx bxl-twitter"></i> </a
-									>Twitter
+								<li class="black-text-socials">
+									<a style="display: flex; align-items: center;" class="black-text" href="https://x.com" target="_blank">
+										<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-twitter"></i>Twitter</a>
 								</li>
+							</div>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="footer-copyright">
-					<div class="container black-text">
+					<div style="font-size: 12px;"class="container black-text">
 						Copyright © 2024 MK's Equity Initiative
 						<a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
 					</div>
@@ -176,6 +202,7 @@
 		  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		  <script type="text/javascript" src="js/materialize.min.js"></script>
 		  <script src="script.js"></script>
+		  <script src="registration.js"></script>
 	</body>
 </html>
 
