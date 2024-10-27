@@ -78,6 +78,15 @@ main {
 
 
 @media (width >= 374px) {
+    .card-info .container {
+        transform: translateY(-4rem) scaleY(0.7) ;
+    }
+
+    .card-info .container p{
+        font-size: 18px !important;
+    }
+
+
     .regis-form {
      transform: scale(0.8) translateY(-10rem);
  }
