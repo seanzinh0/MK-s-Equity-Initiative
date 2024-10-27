@@ -75,3 +75,46 @@ main {
 .regis-button input:hover {
     border: 1px solid black;
 }
+
+
+@media (width >= 374px) {
+    .regis-form {
+     transform: scale(0.8) translateY(-10rem);
+ }
+ }
+
+@media (width >= 767px) {
+     .card-info .container {
+         transform: translateY(6rem) scaleY(1) ;
+     }
+    .card-content {
+    transform:  translateY(0rem);
+    }
+    .card-content p {
+     transform: scale(1) translateY(0rem);
+    }
+    .regis-form {
+     transform: scaleX(0.9) translateY(0rem);
+}
+
+@media (width >= 766px) {
+     .card-info .container {
+         transform: translateY(0rem) scaleY(1) ;
+     }
+
+    }
+  @media (width >= 975px) {
+     .card-info .container {
+         transform: translateY(0rem) scaleY(1) ;
+     }
+    .card-content {
+    transform:  translateY(0rem);
+    }
+    .card-content p {
+     transform: scale(1) translateY(0rem);
+    }
+    .regis-form {
+     transform: scale(1) translateY(0rem);
+    }
+ }
+}
