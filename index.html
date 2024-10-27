@@ -48,9 +48,36 @@
 						.card {
 							justify-content: center;
 
-						}
+						}#carousel-style {
+        height: 300px;
+        width: 100%;
+      }
+      #carousel-card {
+        height: 300px;
+        width: auto;
+      }
+      #carousel-card img {
+        height: 300px;
+        width: auto;
+      }
+      @media screen and (max-width: 699px) {
+        #caarousel-card {
+          height: 200px;
+        }
+        #carousel-card img {
+          height: 200px;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        #carousel-card {
+          height: 250px;
+        }
+        #carousel-card img {
+          height: 250px;
+        }
+      }
 						 
-						.carousel-item{
+						/* .carousel-item{
 							height: 200px;
 							
 
@@ -60,7 +87,7 @@
 							display: flex;
 							padding: 10px
 							
-						}
+						} */
 						/* .carousel {
     transform: scale(2) translateX(-20rem);
 } */
@@ -143,7 +170,7 @@
 		  </div> -->
 		  <div class="row brown lighten-5">
 			<!-- <div class="col s6 center offset-m3"> -->
-			<div class="col s12 m7 ">
+			<div class=" s12 m7 ">
 			  <div class="card center">
 				<div class="card-image center">
 				  <img src="./home-images/Carowinds.png">
@@ -257,7 +284,7 @@
 
 			</section> -->
 		<!-- </div> -->
-		<div class="section brown lighten-5 center">
+		<!-- <div class="section brown lighten-5 center">
 		<div class="carousel">
 			<a class="carousel-item" href="#one!"><img src="./home-images/Carowinds.png"></a>
 			<a class="carousel-item" href="#two!"><img src="./home-images/disney4.jpeg"></a>
@@ -265,8 +292,60 @@
 			<a class="carousel-item" href="#four!"><img src="./home-images/panthers.webp"></a>
 			<a class="carousel-item" href="#five!"><img src="./home-images/hornets.jpeg"></a>
 		  </div>
-		</div>
-		<footer class="page-footer blue lighten-4">
+		</div> -->
+		<div class="section brown lighten-5">
+			<div class="carousel" id="carousel-style">
+			  <a class="carousel-item" id="carousel-card" ref="#one!" ><img src="./home-images/Carowinds.png" /></a>
+			  <a class="carousel-item" id="carousel-card" href="#two!" ><img src="./home-images/disney4.jpeg" /></a>
+			  <a class="carousel-item" id="carousel-card" href="#three!" ><img src="./home-images/nczoo2.webp" /></a>
+			  <a class="carousel-item" id="carousel-card" href="#four!" ><img src="./home-images/panthers.webp" /></a>
+			  <a class="carousel-item" id="carousel-card" href="#five!" ><img src="./home-images/hornets.jpeg" /></a>
+			</div>
+		  </div>
+		  <footer class="page-footer blue lighten-4">
+			<div class="container">
+			  <div class="row">
+				<div class="col l6 s12">
+				  <h5 class="black-text">MK's Equity Initiative</h5>
+				  <ul>
+					<li><a href="donations.html"class=" black waves-effect waves-light btn"><i class='bx bx-credit-card right' ></i>DONATE</a>
+					</a></li>
+				  </ul>
+				  <p class="black-text">Call Us: <i class='bx bxs-phone'></i> 704-522-1111</p>
+				  <p class="black-text">Email Us: <i class='bx bxs-envelope' ></i> info@mkequityinitiative.org</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+				  <h5 class="black-text">Follow Us</h5>
+				  <ul>
+					<li class="black-text-socials">
+					  <a style="display: flex; align-items: center;" class="black-text" style href="https://www.instagram.com" target="_blank">
+						<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-instagram"></i>Instagram</a>
+					</li>
+					<li class="black-text-socials">
+					  <a style="display: flex; align-items: center;" class="black-text" href="https://www.facebook.com" target="_blank">
+						<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-facebook"></i>Facebook</a>
+					</li>
+					<li class="black-text-socials">
+					  <a style="display: flex; align-items: center;" class="black-text" href="https://www.linkedin.com" target="_blank">
+						<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-linkedin"></i>LinkedIn</a>
+					</li>
+					<li class="black-text-socials">
+					  <a style="display: flex; align-items: center;" class="black-text" href="https://x.com" target="_blank">
+						<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-twitter"></i>Twitter</a>
+					</li>
+				  </div>
+				  </ul>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-copyright">
+			  <div style="font-size: 12px;"class="container black-text">
+				Copyright © 2024 MK's Equity Initiative
+				<a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
+			  </div>
+			</div>
+		  </footer>
+		<!-- <footer class="page-footer blue lighten-4">
 			<div class="container">
 			  <div class="row">
 				<div class="col l6 s12">
@@ -301,7 +380,7 @@
 			  <a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
 			  </div>
 			</div>
-		  </footer>
+		  </footer> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
