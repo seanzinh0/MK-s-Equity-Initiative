@@ -69,3 +69,29 @@
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+.input-field.valid input {
+  border-bottom: 1px solid green;
+  box-shadow: 0 1px 0 0 green;
+}
+
+.input-field.valid textarea {
+  border-bottom: 1px solid green;
+  box-shadow: 0 1px 0 0 green
+}
+
+.input-field.invalid textarea {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red;
+}
+
+.input-field.invalid input {
+  border-bottom: 1px solid red;
+  box-shadow: 0 1px 0 0 red;
+}
+
+.input-field .error-message {
+  color: red;
+  font-size: 12px;
+  height: 12px;;
+}
