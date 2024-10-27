@@ -56,56 +56,63 @@
     <div class="donations-container">
       <div class="donations-form-container">
         <h3 class="center">Donation Form</h3>
-        <form class="donations-form" action="#">
+        <form id="donations-form" action="#">
           <p class="underline center">Donation</p>
           <div class="input-field">
             <label for="donation">Amount</label>
-            <input id="donation-input" type="number" class="validate" required>
+            <input id="donation-input" type="number" required>
+            <div class="error-message"></div>
           </div>
           <!-- Contact Information -->
           <p class="underline center">Contact Information</p>
           <div class="input-field">
             <label for="first-name">First Name</label>
-            <input id="first-name" type="text" class="validate" required>
+            <input id="first-name" type="text" required>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="last-name">Last Name</label>
-            <input id="last-name" type="text" class="validate" required>
+            <input id="last-name" type="text" required>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="email">Email</label>
-            <input id="email" type="email" class="validate" required>
+            <input id="email" type="email" required>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="phone-number">Phone</label>
-            <input type="tel" id="phone-number" class="validate" required>
+            <input type="tel" id="phone-number" required>
+            <div class="error-message"></div>
           </div>
           <!-- Billing Address -->
           <p class="underline center">Billing Address</p>
           <div class="input-field">
-            <select name="country" id="country" class="validate" required>
+            <select name="country" id="country">
               <option value="" disabled selected>Country</option>
-              <option value="">United States</option>
-              <option value="">United States</option>
-              <option value="">United States</option>
-              <option value="">United States</option>
+              <option required id="USA" value="USA">United States</option>
             </select>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="address">Address</label>
-            <textarea class="materialize-textarea" name="address" id="address"></textarea>
+            <textarea class="materialize-textarea" name="address" id="address" required></textarea>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="city">City</label>
-            <input type="text" id="city" class="validate" required>
+            <input type="text" id="city" required>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="state">State</label>
-            <input type="text" id="state" class="validate" required>
+            <input type="text" id="state" required>
+            <div class="error-message"></div>
           </div>
           <div class="input-field">
             <label for="zip-code">ZIP Code</label>
-            <input type="text" id="zip-code" class="validate" required>
+            <input type="text" id="zip-code" required>
+            <div class="error-message"></div>
           </div>
          <!-- Payment Information -->
           <p class="underline center">Payment Information</p>
@@ -124,15 +131,18 @@
           <div class="payment-box">
             <div class="input-field">
               <label for="card-num">Card Number</label>
-              <input placeholder="XXXX XXXX XXXX XXXX" id="card-num" type="tel" maxlength="19" pattern="[0-9\s]{13,19}" class="validate" required>
+              <input placeholder="XXXX XXXX XXXX XXXX" id="card-num" type="tel" maxlength="19" required>
+              <div class="error-message"></div>
             </div>
             <div class="input-field">
               <label for="expiration">Expiration Date</label>
-              <input class="expiration validate" placeholder="MM / YY" type="date" required>
+              <input id="expiration" placeholder="MM / YY" type="date" required>
+              <div class="error-message"></div>
             </div>
             <div class="input-field">
               <label for="security-code">Security Code</label>
-              <input type="text" id="security-code" class="validate" maxlength="4" required>
+              <input type="text" id="security-code" maxlength="4" required>
+              <div class="error-message"></div>
             </div>
             <!-- Comments -->
              <p class="underline center">Comments</p>
@@ -143,7 +153,7 @@
           </div>
           <!-- Donate Button + Modal -->
           <div style="margin-top: 50px;" class="button-center">
-            <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger" type="submit">Donate</button>
+            <button data-target="modal" class="donate-btn btn waves-effect waves-light btn modal-trigger">Donate</button>
             <div id="modal" class="modal">
               <div class="modal-content">
                 <h4>Donation Confirmation</h4>
@@ -153,8 +163,8 @@
                 </p>
               </div>
               <div class="modal-footer">
-                <a id="disagree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Deny</a>
-                <a id="agree-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Confirm</a>
+                <a id="deny-btn" href="#" class="modal-close waves-effect waves-green btn-flat">Deny</a>
+                <a id="confirm-btn" href="#" type="submit" class="modal-close waves-effect waves-green btn-flat">Confirm</a>
               </div>
             </div>
           </form>       
@@ -168,31 +178,38 @@
           <div class="col l6 s12">
             <h5 class="black-text">MK's Equity Initiative</h5>
             <ul>
-              <li><a href="donations.html" class="black-text">Donations</a></li>
+              <li><a href="donations.html"class=" black waves-effect waves-light btn"><i class='bx bx-credit-card right' ></i>DONATE</a>
+              </a></li>
             </ul>
-            <p class="black-text">Contact us: 704-522-1111</p>
+            <p class="black-text">Call Us: <i class='bx bxs-phone'></i> 704-522-1111</p>
+            <p class="black-text">Email Us: <i class='bx bxs-envelope' ></i> info@mkequityinitiative.org</p>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="black-text">Follow Us</h5>
             <ul>
-              <li class="black-text">
-                <a class="black-text" href="https://www.instagram.com" target="_blank"> <i class="bx bxl-instagram"></i> </a>Instagram
+              <li class="black-text-socials">
+                <a style="display: flex; align-items: center;" class="black-text" style href="https://www.instagram.com" target="_blank">
+                  <i style="font-size: 30px; padding-right: 5px;" class="bx bxl-instagram"></i>Instagram</a>
               </li>
-              <li class="black-text">
-                <a class="black-text" href="https://www.facebook.com" target="_blank"> <i class="bx bxl-facebook"></i> </a>FaceBook
+              <li class="black-text-socials">
+                <a style="display: flex; align-items: center;" class="black-text" href="https://www.facebook.com" target="_blank">
+                  <i style="font-size: 30px; padding-right: 5px;" class="bx bxl-facebook"></i>Facebook</a>
               </li>
-              <li class="black-text">
-                <a class="black-text" href="https://www.linkedin.com" target="_blank"> <i class="bx bxl-linkedin"></i> </a>LinkedIn
+              <li class="black-text-socials">
+                <a style="display: flex; align-items: center;" class="black-text" href="https://www.linkedin.com" target="_blank">
+                  <i style="font-size: 30px; padding-right: 5px;" class="bx bxl-linkedin"></i>LinkedIn</a>
               </li>
-              <li class="black-text">
-                <a class="black-text" href="https://x.com" target="_blank"> <i class="bx bxl-twitter"></i> </a>Twitter
+              <li class="black-text-socials">
+                <a style="display: flex; align-items: center;" class="black-text" href="https://x.com" target="_blank">
+                  <i style="font-size: 30px; padding-right: 5px;" class="bx bxl-twitter"></i>Twitter</a>
               </li>
+            </div>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container black-text">
+        <div style="font-size: 12px;"class="container black-text">
           Copyright © 2024 MK's Equity Initiative
           <a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
         </div>
