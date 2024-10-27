@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="navbar.css" />
+		<link rel="stylesheet" href="css-stats/stats.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -35,37 +35,64 @@
 			<li><a href="sponsorship.html" class="black-text">Sponsorship</a></li>
 		</ul>
 
-		<div id="id-container" class="container" style="margin-top: 100px;">
-        <h2 class="center-align"> MK's Equity Initiative Report</h2>
-        
+		<h2 class="center-align" style="margin-top: 80px">MK's Equity Initiative Report</h2>
 
-        <div class="row" style="margin-top: 100px;">
-        <div class="col s6">MK's Equity Initiative has supported 15,000 children who live in poverty. Thanks to the support of our community, mentors, and leaders, we have provided children with $7.8 billion in resources, including food, school supplies, mentorship, and after-school programs.The graph represent the number of poor residents in Charlotte, NC. Residents aged 24 and under make up the majority of those living in poverty. </div>
-        </div>
-        </div>
+		<div class="container row center" id="flex-container">
+			<div class="col">
+				<p>
+					MK's Equity Initiative has supported 15,000 children who live in poverty. Thanks to the support of our community, mentors, and leaders, we have provided children with $7.8 billion in resources, including food, school supplies, mentorship, and after-school programs. The graph represent the number of poor residents in Charlotte, NC. Residents aged 24 and under make up the
+					majority of those living in poverty.
+				</p>
+			</div>
+			<div class="col">
+				<img src="images-stats/poverty-by-age-distribution-Charlotte-NC.png" alt="poverty age by dist" />
+			</div>
+		</div>
 
-		<div class="container" style="">
-			<div class="row">
-				<div class="col s6">
+		<div class="container center">
+			<div class="row" id="flex-container">
+				<div class="col">
+					<p>Our recent reports indicate that child poverty in Charlotte, NC, has dropped by 45%, although residents aged 24 and under still account for a significant portion of those affected. From the graph on the left, MK's Equity Initiative's food drives, resources, and community involvement has helped lower the number number of child poverty in the Charlotte area.</p>
 				</div>
-				<div class="col s6">
-				<img src="images-stats/poverty-by-age-distribution-Charlotte-NC.png" alt="">
+				<div class="col">
+					<img src="images-stats/graphdecline.png" alt="decline graph" id="decline-graph"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="container center">
+			<div class="row" id="flex-container">
+				<div class="col">
+					<p>MMK's Equity Initiative has successfully supported 8,564 teenagers in their pursuit of higher education at universities and colleges across the country. In addition to this, we have launched a variety of reading and educational clubs for K-11 students, focusing on critical thinking, literacy, and STEM skills.</p>
+				</div>
+				<div class="col">
+					<img src="images-stats/children stats.png" alt="children" />
 				</div>
 			</div>
 		</div>
 
 		<ul class="collapsible">
 			<li>
-			<div class="collapsible-header">After School Program</div>
-			<div class="collapsible-body"><span> Our report shows that 75% of our mentees have improved their grades by at least one letter after joining the program, while 90% report feeling more engaged in their studies. Additionally, the program offers various enrichment activities, leading to a 60% increase in students' interest in STEM fields. With a strong focus on mentorship and skill-building, our after school program not only enhances educational outcomes but also fosters a supportive community environment, helping children thrive both academically and personally.</span></div>
+				<div class="collapsible-header">After School Program</div>
+				<div class="collapsible-body">
+					<span>
+						Our report shows that 75% of our mentees have improved their grades by at least one letter after joining the program, while 90% report feeling more engaged in their studies. Additionally, the program offers various enrichment activities, leading to a 60% increase in students' interest in STEM fields. With a strong focus on mentorship and skill-building, our after school
+						program not only enhances educational outcomes but also fosters a supportive community environment, helping children thrive both academically and personally.
+					</span>
+				</div>
 			</li>
 			<li>
-			<div class="collapsible-header">Food Drives</div>
-			<div class="collapsible-body"><span>In 2023, Recently, the drive successfully collected over 12,000 pounds of food, providing essential meals for hundreds of families. This initiative not only helps alleviate immediate hunger but also supports the overall development and educational success of children in need.</span></div>
+				<div class="collapsible-header">Food Drives</div>
+				<div class="collapsible-body"><span>In 2023, Recently, the drive successfully collected over 12,000 pounds of food, providing essential meals for hundreds of families. This initiative not only helps alleviate immediate hunger but also supports the overall development and educational success of children in need. </span></div>
 			</li>
 			<li>
-			<div class="collapsible-header">Mentorship</div>
-			<div class="collapsible-body"><span>Our mentorship program has allowed our mentees to have a 20-30% increase in job satisfaction, 80% increase in applying for and a 15-25% improvement in professional skills. Additionally, our mentees report feeling more confident in their abilities, with 70% stating they have developed valuable relationships that aid their career progression. Overall, these programs not only foster personal growth but also enhance professional development.</span></div>
+				<div class="collapsible-header">Mentorship</div>
+				<div class="collapsible-body">
+					<span>
+						Our mentorship program has allowed our mentees to have a 20-30% increase in job satisfaction, 80% increase in applying for and a 15-25% improvement in professional skills. Additionally, our mentees report feeling more confident in their abilities, with 70% stating they have developed valuable relationships that aid their career progression. Overall, these programs not only
+						foster personal growth but also enhance professional development.
+					</span>
+				</div>
 			</li>
 		</ul>
 
@@ -75,31 +102,38 @@
 					<div class="col l6 s12">
 						<h5 class="black-text">MK's Equity Initiative</h5>
 						<ul>
-							<li><a href="donations.html" class="black-text">Donations</a></li>
+							<li><a href="donations.html"class=" black waves-effect waves-light btn"><i class='bx bx-credit-card right' ></i>DONATE</a>
+							</a></li>
 						</ul>
-						<p class="black-text">Contact us: 704-522-1111</p>
+						<p class="black-text">Call Us: <i class='bx bxs-phone'></i> 704-522-1111</p>
+						<p class="black-text">Email Us: <i class='bx bxs-envelope' ></i> info@mkequityinitiative.org</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
 						<h5 class="black-text">Follow Us</h5>
 						<ul>
-							<li class="black-text">
-								<a class="black-text" href="https://www.instagram.com" target="_blank"> <i class="bx bxl-instagram"></i> </a>Instagram
+							<li class="black-text-socials">
+								<a style="display: flex; align-items: center;" class="black-text" style href="https://www.instagram.com" target="_blank">
+									<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-instagram"></i>Instagram</a>
 							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://www.facebook.com" target="_blank"> <i class="bx bxl-facebook"></i> </a>FaceBook
+							<li class="black-text-socials">
+								<a style="display: flex; align-items: center;" class="black-text" href="https://www.facebook.com" target="_blank">
+									<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-facebook"></i>Facebook</a>
 							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://www.linkedin.com" target="_blank"> <i class="bx bxl-linkedin"></i> </a>LinkedIn
+							<li class="black-text-socials">
+								<a style="display: flex; align-items: center;" class="black-text" href="https://www.linkedin.com" target="_blank">
+									<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-linkedin"></i>LinkedIn</a>
 							</li>
-							<li class="black-text">
-								<a class="black-text" href="https://x.com" target="_blank"> <i class="bx bxl-twitter"></i> </a>Twitter
+							<li class="black-text-socials">
+								<a style="display: flex; align-items: center;" class="black-text" href="https://x.com" target="_blank">
+									<i style="font-size: 30px; padding-right: 5px;" class="bx bxl-twitter"></i>Twitter</a>
 							</li>
+						</div>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="footer-copyright">
-				<div class="container black-text">
+				<div style="font-size: 12px;"class="container black-text">
 					Copyright © 2024 MK's Equity Initiative
 					<a class="black-text right" href="#!">Privacy Policy | Terms of Use</a>
 				</div>
@@ -109,6 +143,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script src="script.js"></script>
-		<script src="Stats-js/statsscript.js"></script> 
+		<script src="Stats-js/statsscript.js"></script>
 	</body>
 </html>
